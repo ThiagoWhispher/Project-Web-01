@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<title>CBIS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type = "text/css" rel="stylesheet" href="stylesheet.css">
+<link rel="icon" type="image/png" href="imagens/Logo_CBIS.png">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-navbar, label {font-family: "Montserrat", sans-serif}
+.mySlides {display:none;}
+</style>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+<ul class="w3-navbar w3-black w3-card-2 w3-left-align">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right"> 
+    <a class="w3-padding-large w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  </li>
+  <li class="w3-hide-small"><a href="perfil.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">INICIO</a></li>
+  <li class="w3-hide-small"><a href="http://www.sbis.org.br/sobre-cbis" class="w3-hover-none w3-hover-text-grey w3-padding-large">SOBRE</a></li>
+  <li class="w3-hide-small"><a href="http://www.sbis.org.br/menu-chamadas-cbis" class="w3-hover-none w3-hover-text-grey w3-padding-large">SUBIMISSÕES</a></li>
+  <li class="w3-hide-small"><a href="http://www.sbis.org.br/inscricao-cbis" class="w3-hover-none w3-hover-text-grey w3-padding-large">INSCRIÇÕES</a></li>
+  <li class="w3-hide-small"><a href="http://www.sbis.org.br/programacao-cbis" class="w3-hover-none w3-hover-text-grey w3-padding-large">PROGRAMAÇÃO</a></li>
+</ul>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <ul class="w3-navbar w3-left-align w3-black">
+    <li><a class="w3-padding-large" href="perfil.html">INICIO</a></li>
+    <li><a class="w3-padding-large" href="http://www.sbis.org.br/sobre-cbis">SOBRE</a></li>
+    <li><a class="w3-padding-large" href="http://www.sbis.org.br/menu-chamadas-cbis">SUBMISSÕES</a></li>
+    <li><a class="w3-padding-large" href="http://www.sbis.org.br/inscricao-cbis">INSCRIÇÕES</a></li>
+    <li><a class="w3-padding-large" href="http://www.sbis.org.br/programacao-cbis">PROGRAMAÇÃO</a></li>
+  </ul>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1800px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container">
+    <img src="imagens/Evento_CBIS-2.jpg" style="width:100%" height="100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    </div>
+  </div>
+
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide">CONGRESSO BRASILEIRO DE INFORMÁTICA EM SAÚDE</h2>
+    <p class="w3-opacity"><i>Informática Transformando a Saúde.</i></p>
+    <p class="w3-justify">A Sociedade Brasileira de Informática em Saúde - SBIS, juntamente com a Universidade Federal de Goiás - Comissão de Governança da Informação em Saúde (CGIS-UFG), realizarão no período de 27 a 30 de novembro, em Goiânia-GO, o XV Congresso Brasileiro de Informática em Saúde - CBIS 2016.   </p>
+    <p class="w3-justify">A Informática em Saúde trata de conceitos e aplicações em Tecnologias de Informação e Comunicação (TIC) para a melhoria e transformação de sistemas, serviços e processos de Saúde. O CBIS 2016 será realizado durante quatro dias, a fim de debater o desenvolvimento da TIC aplicada à Saúde e seu uso adequado, tendo como tema central a “Informática Transformando a Saúde”. O CBIS 2016 contará com a participação de atores ativos no processo de construção do e-Saúde nacional, ou seja, da Política Nacional de Informação e Informática em Saúde (PNIIS). </p>
+    <p class="w3-justify">Este ano o CBIS contará com várias novidades inspiradas na excelente experiência do MEDINFO, principal congresso mundial da área realizado pela SBIS no Brasil em 2015, a começar pela divisão das áreas temáticas nas quais as diferentes modalidades de submissão de trabalhos se distribuem.   </p>
+  </div>
+        
+  <!-- The Tour Section -->
+   <div class="w3-black ">
+    <div class="w3-container w3-content w3-padding-64 w3-center" style=" align:center">
+      <a href = "http://www.sbis.org.br/cbis2016">
+     <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Visite nosso site</button>
+      </a>
+       </div>
+      </div>
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

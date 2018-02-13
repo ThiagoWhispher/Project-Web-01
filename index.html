@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"b>
+<title>The Terrorist</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="fonts.css">
+<link rel="stylesheet" type="text/css" href="oi.css">
+<link rel="icon" type="image/png" href="logo_terrorist.png">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("http://67.media.tumblr.com/016f86d9426c8d96ad6ae412d52e6f19/tumblr_nlq6y7NbXC1rrvuzmo1_1280.jpg");
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("http://67.media.tumblr.com/016f86d9426c8d96ad6ae412d52e6f19/tumblr_nlq6y7NbXC1rrvuzmo1_1280.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("http://67.media.tumblr.com/016f86d9426c8d96ad6ae412d52e6f19/tumblr_nlq6y7NbXC1rrvuzmo1_1280.jpg");
+    min-height: 400px;
+}
+
+/* Adjust the position of the parallax image text */
+.w3-display-middle {bottom: 45%;}
+
+.w3-wide {letter-spacing: 10px;}
+
+.w3-hover-opacity {cursor: pointer;}
+
+.w3-fixar{ position: absolute; }
+
+.w3-bottom{width:100%;z-index:1}
+
+#googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-transparent" id="myNavbar">
+    <li><a href="#login" class="w3-padding-large w3-light-grey"><strong>LOGIN<strong></a></li>
+    <li><a href="#cadastro" class="w3-padding-large w3-light-grey"><strong>CADASTRAR<strong></a></li>
+  </ul>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-opacity">
+  <a href="#about">
+    <div class="w3-display-middle ">
+      <div class="w3-center" style="margin-top:-110px">
+        <div class="w3-animate-opacity"><img src="logo_terrorist.png" class="w3-center"></div>
+        <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">THE TERRORIST</span>
+      </div>
+    </div>
+  </a>
+
+  <div class="w3-center w3-bottom w3-fixar" id="gif">
+    
+    <a href="#about"><img src= "http://i.picasion.com/pic82/261464d68e0d6c1ae8b35a8ea63eb545.gif" width="50px" height="50px"></a>
+  </div>
+
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">SOBRE NOS</h3>
+  <div class="w3-row w3-center">
+    <div class="w3-col m4 w3-center">
+      <p class="w3-center"><b>Godmother Vivitotória</b></p>
+      <a href="https://github.com/vitoriaHeliane"><img src= "imagens/vitoria.png" class="w3-circle" alt="Foto de Vitoria"></a>
+    </div>
+    <div class="w3-col m4 w3-center">
+      <p class="w3-center"><b>El Mago Dadinho</b></p>
+      <a href="https://github.com/rivaldo9"><img src="imagens/rivaldo.png" class="w3-circle" alt="Foto de Rivaldo"></a>
+    </div>
+    <div class="w3-col m4 w3-center">
+      <p class="w3-center"><b>The Largatixa Head</b></p>
+      <a href="https://github.com/ThiagoWhispher"><img src="imagens/thiago.png" class="w3-circle" alt="Foto de Thiago"></a>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col w3-hide-small">
+      <br><p>Somos estudantes do curso de Informatica no Instituto Federal da Paraiba - Campus Guarabira.<br>
+Este site foi desenvolvido para a disciplina de Web, ministrada por Moisés Guimarães. <br>
+Apreciem este fodendo site! Acima somos nós: A Godmother Vivitotória, El Mago Dadinho e The Largatixa Head. <br>Descubra mais sobre nós através do nosso github, basta clicar na nossa foto. ;)</p>
+
+    </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container" id="login">
+	<br>
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-white w3-wide">LOGIN</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64 w3-center">
+
+  <div class="w3-row w3-padding-32 w3-center">
+    <div class="w3-col m10 w3-container w3-section">
+      
+      <div class="w3-row-padding" style="margin:0 -16px 8px 25%">
+        <div class="w3-center">
+          <input class="w3-input w3-border w3-hover-light-grey" type="email" placeholder="Email" id="email">
+        </div>
+        <div class="w3-center">
+          <input class="w3-input w3-border w3-hover-light-grey" type="password" placeholder="Senha" id="senha">
+        </div>
+      </div>
+      <button class="w3-btn w3-section w3-right" onclick="onLogin()">LOGIN</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" style="max-width:100%">
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-center">
+  <div class="w3-display-middle" id="cadastro">
+     <span class="w3-xxlarge w3-white w3-wide">CADASTRO</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64 w3-center">
+
+  <div class="w3-row w3-padding-32 w3-center">
+    <div class="w3-col m10 w3-container w3-section">
+      
+      <div class="w3-row-padding" style="margin:0 -16px 8px 25%">
+        <div class="w3-center">
+          <input class="w3-input w3-border w3-hover-light-grey" type="email" placeholder="Email" id="email">
+        </div>
+        <div class="w3-center">
+          <input class="w3-input w3-border w3-hover-light-grey" type="password" placeholder="Senha" id="senha">
+        </div>
+      </div>
+      <button class="w3-btn w3-section w3-right">CONCLUIR</button>
+    </div>
+  </div>
+</div>
+
+ 
+<!-- Add Google Maps -->
+<script>
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var teste = document.getElementById('email');
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:12,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    var gif = document.getElementById("gif");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-transparent";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-transparent", "");
+    }
+
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        
+    } else {
+        navbar.className = navbar.className.replace("w3-hide", "");
+    }
+}
+
+function onLogin(){
+	if(document.getElementById("email").value === "exemplo@gmail.com" && 
+		document.getElementById("senha").value === "exemplo"){
+		window.location.href="perfil.html";
+	}else{
+		alert("Email ou senha errados!");
+	}
+}
+</script>
+
+</body>
+</html>
+
